@@ -1,37 +1,30 @@
 # UxSDK
 
 #### 介绍
-Uinxed-Kernel开放的SDK（软件开发工具包）为开发者提供的框架，旨在简化Unix-like操作系统内核的开发和测试。
+UxSDK（Unixed-Kernel开放的SDK）是一个为开发者提供的框架，旨在简化Unix-like操作系统内核的开发和测试。它提供了一套工具和库，帮助开发者快速构建和验证操作系统内核的功能。
 
 #### 软件架构
-软件架构说明
+UxSDK的软件架构包括以下几个核心组件：
 
+1. **标准I/O库（stdio.h）**：提供基本的输入输出功能，如格式化字符串输出和字符输出。
+2. **文件操作（uxfope.c 和 unistd.h）**：封装了文件操作相关的系统调用，如打开、关闭和读取文件。
+3. **内存管理（uxmem.c）**：提供了动态内存分配和释放的功能，封装了对应的系统调用。
+4. **字符串处理和格式化输出（uxstr.c）**：实现了`putchar`和`printf`函数，支持复杂的字符串格式化和输出。
+5. **主程序（main.c）**：提供了一个示例程序，演示了如何使用UxSDK中的各种功能。
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. **下载SDK**：从仓库克隆UxSDK到本地。
+2. **配置环境**：根据你的开发环境配置编译器和必要的工具链。
+3. **编译SDK**：使用提供的Makefile或构建脚本编译SDK。
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. **包含头文件**：在你的源代码中包含UxSDK提供的头文件，如`#include "stdio.h"`。
+2. **编写代码**：使用UxSDK提供的函数和接口编写你的操作系统内核代码。
+3. **编译和测试**：使用“make”编译你的代码，并在相应的环境中进行测试。
+4. **清理中间文件**：使用“make clean”清理中间编译物。
 
-#### 参与贡献
+#### 外部链接
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+- Uinxed-Kernel: [https://github.com/ViudiraTech/Uinxed-Kernel](https://github.com/ViudiraTech/Uinxed-Kernel)
