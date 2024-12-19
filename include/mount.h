@@ -2,6 +2,6 @@
 #define INCLUDE_MOUNT_H_
 
 int mount(const char *source, const char *target);
-int unmount(const char *target);
+int umount(const char *target);
 
 #endif // INCLUDE_MOUNT_H_

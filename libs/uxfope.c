@@ -20,7 +20,7 @@ int mount(const char *source, const char *target)
 	return __syscall2(8, source, target);
 }
 
-int unmount(const char *target)
+int umount(const char *target)
 {
 	return __syscall1(9, target);
 }
