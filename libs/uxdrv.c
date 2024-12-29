@@ -2,12 +2,12 @@
 
 void sleep(__UINT32_TYPE__ timer)
 {
-	__syscall1(12, timer);
+	__syscall1(13, timer);
 	return;
 }
 
 void beep(int hertz)
 {
-	__syscall1(13, hertz);
+	__syscall1(14, hertz);
 	return;
 }

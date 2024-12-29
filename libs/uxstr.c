@@ -364,12 +364,12 @@ void printf(const char *str, ...)
 
 	buff[i] = '\0';
 
-	__syscall1(4, buff);
+	__syscall1(5, buff);
 	return;
 }
 
 void putchar(const char c)
 {
-	__syscall1(5, c);
+	__syscall1(6, c);
 	return;
 }
