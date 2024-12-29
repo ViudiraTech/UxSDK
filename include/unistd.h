@@ -8,4 +8,7 @@ int read(int fd, void *buf, unsigned int count);
 void poweroff(void);
 void reboot(void);
 
+void sleep(__UINT32_TYPE__ timer);
+void beep(int hertz);
+
 #endif // INCLUDE_UNISTD_H_
