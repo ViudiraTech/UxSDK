@@ -11,3 +11,8 @@ void beep(int hertz)
 	__syscall1(14, hertz);
 	return;
 }
+
+int getpid(void)
+{
+	return __syscall0(15);
+}

@@ -12,4 +12,6 @@ void reboot(void);
 void sleep(__UINT32_TYPE__ timer);
 void beep(int hertz);
 
+int getpid(void);
+
 #endif // INCLUDE_UNISTD_H_
