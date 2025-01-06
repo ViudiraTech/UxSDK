@@ -2,10 +2,10 @@
 
 void *malloc(unsigned int size)
 {
-	return (void *)__syscall1(7, size);
+	return (void *)__syscall1(mallocid, size);
 }
 
 void free(void *ptr)
 {
-	__syscall1(8, ptr);
+	__syscall1(freeid, ptr);
 }

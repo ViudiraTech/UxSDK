@@ -84,3 +84,23 @@
 #define __syscall_argn_private(_0, _1, _2, _3, _4, _5, n, ...) n
 #define __syscall_argn(...) __syscall_argn_private(0, ##__VA_ARGS__, 5, 4, 3, 2, 1, 0)
 #define __syscall(id, ...) __syscall_concat(__syscall, __syscall_argn(__VA_ARGS__))(id, ##__VA_ARGS__)
+
+#define openid 1
+#define closeid 2
+#define readid 3
+#define sizeid 4
+#define mountid 9
+#define umountid 10
+
+#define printfid 5
+#define putcharid 6
+
+#define sleepid 13
+#define beepid 14
+#define getpidid 15
+
+#define mallocid 7
+#define freeid 8
+
+#define poweroffid 11
+#define rebootid 12

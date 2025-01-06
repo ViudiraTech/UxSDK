@@ -2,10 +2,10 @@
 
 void poweroff(void)
 {
-	__syscall0(11);
+	__syscall0(poweroffid);
 }
 
 void reboot(void)
 {
-	__syscall0(12);
+	__syscall0(rebootid);
 }
