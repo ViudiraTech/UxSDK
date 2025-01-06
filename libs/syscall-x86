@@ -98,6 +98,7 @@
 #define sleepid 13
 #define beepid 14
 #define getpidid 15
+#define exitid 16
 
 #define mallocid 7
 #define freeid 8

@@ -4,4 +4,6 @@
 void *malloc(unsigned int size);
 void free(void *ptr);
 
+void exit(int code);
+
 #endif // INCLUDE_STDLIB_H_

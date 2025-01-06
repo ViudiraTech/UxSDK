@@ -16,3 +16,9 @@ int getpid(void)
 {
 	return __syscall0(getpidid);
 }
+
+void exit(int code)
+{
+	__syscall1(exitid, code);
+	return;
+}
