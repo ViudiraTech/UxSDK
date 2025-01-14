@@ -15,6 +15,10 @@ int main(void)
 	putchar('a');
 	putchar('b');
 	putchar('c');
+	printf("\n接下来测试字符输入：");
+	char ch;
+	getch(&ch);
+	putchar(ch);
 	printf("\n很不错，至少到这里没死机就很好了!\n");
 	while(1);
 }

@@ -373,3 +373,8 @@ void putchar(const char c)
 	__syscall1(putcharid, c);
 	return;
 }
+
+void getch(char *ch)
+{
+	*ch = __syscall0(getchid);
+}
