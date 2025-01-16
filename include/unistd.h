@@ -1,10 +1,11 @@
 #ifndef INCLUDE_UNISTD_H_
 #define INCLUDE_UNISTD_H_
 
-int open(const char *pathname, int flags);
-int close(int fd);
-int read(int fd, void *buf, unsigned int count);
-int size(int fd);
+int open(const char *path, int oflag);
+int close(int filedes);
+int read(int filedes, void *buf, unsigned int nbyte);
+int write(int filedes, const void *buf, unsigned int nbyte);
+int size(int filedes);
 
 void poweroff(void);
 void reboot(void);

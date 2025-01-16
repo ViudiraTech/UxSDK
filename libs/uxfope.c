@@ -1,23 +1,28 @@
 #include "syscall-x86"
 
-int open(const char *pathname, int flags)
+int open(const char *path, int oflag)
 {
-	return __syscall2(openid, pathname, flags);
+	return __syscall2(openid, path, oflag);
 }
 
-int close(int fd)
+int close(int filedes)
 {
-	return __syscall1(closeid, fd);
+	return __syscall1(closeid, filedes);
 }
 
-int read(int fd, void *buf, unsigned int count)
+int read(int filedes, void *buf, unsigned int nbyte)
 {
-	return __syscall3(readid, fd, buf, count);
+	return __syscall3(readid, filedes, buf, nbyte);
 }
 
-int size(int fd)
+int write(int filedes, const void *buf, unsigned int nbyte)
 {
-	return __syscall1(sizeid, fd);
+	return __syscall3(writeid, filedes, buf, nbyte);
+}
+
+int size(int filedes)
+{
+	return __syscall1(sizeid, filedes);
 }
 
 int mount(const char *source, const char *target)
